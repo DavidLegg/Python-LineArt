@@ -32,7 +32,8 @@ __Drawing__
 
 __Fade Drawing__
 
- * `start_rgba` - The red, green, blue, and alpha values (0-255) of the first line drawn. Overrides `color` setting of other drawings.
+ * Everything in __Drawing__, except `color` (see below)
+ * `start_rgba` - The red, green, blue, and alpha values (0-255) of the first line drawn. Overrides `color` setting.
  * `end_rgba` - Same format as `start__rgba`, but defines the color of the last line drawn.
  * `start_rgba_variation` - The maximum allowable random variation in the start red, green, blue, and alpha values.
  * `end_rgba_variation` - The maximum allowable random variation in the end red, green, blue, and alpha values.
@@ -40,12 +41,15 @@ __Fade Drawing__
 
 __Multiplier Drawing__
 
+ * Everything in __Drawing__
  * `strokes` - The number of times the drawing is repeated.
 
 __Linear Start Drawing__
 
+ * Everything in __Drawing__
  * `start_variation` - The amount by which the first points can vary from the starting line.
 
 __Sized Start Drawing__
 
+ * Everything in __Linear Start Drawing__
  * `start_length` - The minimum length of the starting line.
